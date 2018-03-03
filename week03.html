@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style> /* #0 Amy Chambers */
+	   body {
+	   	color: black;
+	   	background-color: lightgray;
+	   	font-size: 14px; 
+	   	width: 1000px;
+	   	margin: auto;
+	   }
+	   h1 {
+	   	color: white;
+	   	text-shadow: 2px 2px black;
+	   	background-color: darkslategray;
+	   	padding: 10px;
+	   	border-radius: 5px;
+	   	margin-top: 25px;
+	   	margin-bottom: -10px;
+	   }
+	   div[id=title] h1 {
+	   	position: sticky;
+	   	top: 0;
+	   	color: white;
+	   	text-shadow: 2px 2px black;
+	   	text-align: center;
+	   	font-size: 60px;
+	   	width: 500px;
+	   	margin: auto;
+	   	background-color: cadetblue;
+	   	z-index: -1;
+	   }
+	   div[id=styleDescription] p::first-line {
+	   	font-size: 15px;
+	   	font-weight: bold;
+	   }
+	   ul[id=menuBarList] {
+	   	list-style-type: none;
+	   	background: darkgray;
+	   	padding: 10px;
+	   	width: 200px;
+	   	border-radius: 5px;
+	   	margin: auto;
+	   	margin-top: 20px;
+	   }
+	   ul[id=menuBarList] li {
+	   	background: cadetblue;
+	   	color: lightgray;
+	   	margin: 8px;
+	   	padding: 10px;
+	   	border-left: 6px solid;
+	   }
+	   ul[id=menuBarList] li:hover {
+	   	background: cadetblue;
+	   	margin: 8px;
+	   	padding: 10px;
+	   	font-weight: bold;
+	   	color: white;
+	   }
+	   h3 {
+	   	color: white;
+	   	background-color:cadetblue;
+	   	text-shadow: 2px 2px black;
+	   	padding: 5px;
+	   	border-radius: 5px;
+	   	margin-top: 25px;
+	   	margin-bottom: -10px;
+	   }
+	   p {
+	   	color: black;
+	   	border: solid 1px;
+	   	border-radius: 5px;
+	   	padding: 10px;
+	   	background-color: darkgray;
+	   	margin-bottom: -10px;
+	   }
+	   #bottom {
+	   	display: none;
+	   }
+	</style>
+    <style> /* #1 Richard Erickson */
+	   body { 
+	   	font-size:16px; 
+	   	font-family: "Edwardian Script ITC", serif;
+	   	background: violet;
+	   }
+	   #title {
+	   	position: relative;
+	   	left: 200px;
+	   	color: green;
+	   	background: navy;
+	   	width: 50%;
+	   }
+	   #menuBar {
+	   	position: relative;
+	   	bottom: 120px;
+	   	color: red;
+	   	background: brown;
+	   	width: 50%;
+	   }
+	   #styleDescription {
+	   	position: relative;
+	   	width: 50%;
+	   	color: yellow;
+	   	background: gray;
+	   }
+	   #text {
+	   	position: relative;
+	   	color: purple;
+	   	background: orange;
+	   }
+	   #sidebar {
+	   	color: blue;
+	   	background: pink;
+	   }
+	   #bottom {
+	   	color: orange;
+	   	background: black;
+	   }
+	</style>
+    <style> /* #2 Jimmy Downer */
+	   body
+	   {
+	   		font-size: 14px;
+	   		background-color: #000000;
+	   		color: #ffffff;
+	   		font-family: 'Helvetica';
+	   }
+	   
+	   p::first-letter
+	   {
+	   		font-size: 18px;
+	   }
+	   
+	   h1, h2, h3, h4, p::first-letter
+	   {
+	   		font-family: 'Verdana';
+	   		color: #ff0000;
+	   		text-shadow: -2px 2px #9f0000;
+	   }
+	   
+	   h1::after, h2::after, h3::after, h4::after
+	   {
+	   		content: "*";
+	   		color: #ffff00;
+	   		text-shadow: -2px 2px #9f9f00;
+	   }
+	   
+	   a
+	   {
+	   		text-decoration: none;
+	   }
+	   
+	   a:link, a:visited, a:active, .menuBarItem
+	   {
+	   		color: #007fff;
+	   		cursor: pointer;
+	   		display: inline;
+	   }
+	   
+	   a:hover, .menuBarItem:hover, a:focus, .menuBarItem:focus
+	   {
+	   		color: #00ffff;
+	   }
+	   
+	   .menuBarItem
+	   {
+	   		background-color: #1f1f1f;
+	   		border: 1px solid #007fff;
+	   		border-radius: 5px;
+	   		padding: 5px;
+	   		font-size: 10px;
+	   }
+	   
+	   .document
+	   {
+	   		margin-left: 40px;
+	   }
+	   
+	   #title, #menuBar, #styleDescription, #text, #sidebar, #bottom
+	   {
+	   		margin-bottom: 10px;
+	   		border: 1px solid #007fff;
+	   		padding: 10px;
+	   		border-radius: 10px;
+	   }
+	   
+	   #menuBar
+	   {
+	   		background-color: #2f2f2f;
+	   }
+	   
+	   #sidebar:before
+	   {
+	   		font-family: monospace;
+	   		content: "typedef const char * CString;";
+	   		color: #00ff00;
+	   }
+	   
+	   #sidebar:after
+	   {
+	   		font-family: monospace;
+	   		content: "int main(int argc, CString * argv) { return 0; }";
+	   		color: #00ff00;
+	   }
+	   
+	   code
+	   {
+	   		color: #00ffff;
+	   }
+	   
+	   #bottom:after
+	   {
+	   		color: #ff0000;
+	   		content: "never again";
+	   }
+	   
+	   p:after
+	   {
+	   		font-family: monospace;
+	   		color: #7f7f7f;
+	   		content: "\\n";
+	   }
+	   
+	</style>
+    <style> /* #3 Tyler Braithwaite */
+    
+	   body 
+	   {
+	   	background-color: #206876;
+	   }
+	   
+	   #title
+		 {
+		  background-color: #015666;
+  		text-align: center;
+  		padding: 20px;
+  		border:solid 1px;
+  		width : 800px;
+		 }
+		 
+		 #menuBar
+		 {
+		  background-color: #015666;
+  		width : 800px;
+  		float: right
+  		border:solid 1px;
+		 }
+		 
+		 #menuBarList
+		 {
+		  background-color: #015666;
+ 		  width : 800px;
+ 		  margin-left: auto ;
+  		margin-right: auto ;
+		  border:solid 1px;
+		 }
+		 
+		 #styleDescription
+		 {
+		  background-color: #015666;
+  		width : 800px;
+ 		  margin-left: auto ;
+ 		  margin-right: auto ;
+  		border:solid 1px;
+  		text-transform: capitalize;
+  		
+		 }
+		 
+		 #text
+		 {
+		  background-color: #015666;
+  		width : 800px;
+		 	opacity: .9;
+		 	border: solid 1px;
+ 		  margin-left: auto ;
+ 		  margin-right:auto ;
+		 	
+		 }
+		 
+		 #sidebar
+		 {
+		  background-color: #015666;
+  		width : 800px;
+		 	border: solid 1px;
+		 	margin-left: auto ;
+		 	margin-right: auto;
+		 }
+		 
+		 #bottom
+		 {
+		  background-color: #015666;
+  		width : 800px;
+		 	border: solid 1px;
+		 	margin-left: auto ;
+ 		  margin-right: auto ;
+		 }
+		 
+		 a
+		 {
+		 	font-family: Arial;
+  		font-size: 12pt;
+  		color: orange;
+		 }
+		 
+		 p::first-letter
+		 {
+		  font-family: calibri;
+		  font-size: 30pt;
+		  text-transform: capitalize;
+		  text-decoration: underline;
+		 }
+		 
+		 p
+		 {
+		 	color: blue
+		 	text-decoration: underline;
+		 	font-size: 12pt;
+		 }
+		 
+		 h3
+		 {
+		 	color: #A66600;
+		 	text-align: center;
+		 }
+		 
+		 ul
+		 {
+		 	list-style-type: hebrew;
+		 }
+	
+	</style>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Week 03 : CSS</title>
+   </head>
+   <body>
+      <div class="document">
+        <div id="title">
+          <h1>Week 03 : CSS</h1>
+          <p>This page will demonstrate how to switch between different CSS stylesheets to achieve a given effect</p>
+        </div> <!--title -->
+        <div class="content">
+          <div id="menuBar">
+            <ul id="menuBarList">
+              <li class="menuBarItem" onclick="applyStyle(0)">Stylesheet 1</li>
+              <li class="menuBarItem" onclick="applyStyle(1)">Stylesheet 2</li>
+              <li class="menuBarItem" onclick="applyStyle(2)">Stylesheet 3</li>
+              <li class="menuBarItem" onclick="applyStyle(3)">Stylesheet 4</li>
+              <li class="menuBarItem" onclick="disableStyles()">No Stylesheet</li>
+            </ul>
+          </div> <!-- menuBar -->
+          <div id="styleDescription">
+          	<h3>Stylesheet Descriptions</h3>
+          	<div class="description">
+          		<p>
+          			Stylesheet 1: Amy Chambers
+          			<ul>
+          				<li>Top header is in a sticky position, so it scrolls with the page.</li>
+        					<li>The z-index is adjusted so it disappears behind other elements instead of covering them.</li>
+        					<li>Menu text highlights as the cursor hovers over each stylesheet element.</li>
+          			</ul>
+          		</p>
+          	</div>
+          	<div class="description">
+          		<p>Stylesheet 2: Richard Erickson
+          			<ul>
+          			  <li>Changed the color of text.</li>
+          			  <li>Changed the color of the background of div and body elements.</li>
+          			  <li>Changed the position of some of the elements.</li>
+          			</ul>
+          		</p>
+          	</div>
+          	<div class="description">
+          		<p>Stylesheet 3: Jimmy Downer
+          			<ul>
+          				<li>
+		          			Changed the color of the background and text, including contrasting the header colors and the first letters of each paragraph <code>&lt;p&gt;</code> from the rest of the body text.
+        					</li>
+        					<li>
+        						Added drop-shadow to headers and initial letters.
+        					</li>
+        					<li>
+          					Added borders, padding and left margin to each major division/element.
+          				</li>
+          				<li>
+          					Added <code>:hover</code> pseudo-class: links change color on mouse-over.
+          				</li>
+          				<li>
+          					Appended text to certain elements using the <code>:after</code> pseudo-class and the <code>content</code> property.
+          				</li>
+          			</ul>
+        			</p>
+          	</div>
+          	<div class="description">
+          		<p>Stylesheet 4:</p>
+          		<ul>
+          			<li>
+          				Changed the first letter of each paragraph to "Arial", capitalized it, underlined it, and supersized it with a font of 30.
+          			</li>
+          			<li>
+          				Modified the size of the divs to a specific width. I also centered them using the auto feature of the left and right margins.
+          			</li>
+          			<li>
+          				Changed the color of the headings and links
+          			</li>
+          			<li>
+          				Changed the list to display hebrew lettering instead of bullets.
+          			</li>
+          			<li>
+          				centered all the headings and changed the paragraph fonts to Calibri.
+          			</li>
+          		</ul>
+          	</div>
+          </div>
+          <div id="text">
+            <h1>Select the Stylesheet</h1>
+            <p>There are four stylesheets that you may select from. Each one will change the coloring, fonts, 
+            	 and even the layout of the page.You can change the layout of this page by selecting different 
+               stylesheets in the menu, or by selecting one of the following links:<br>
+              <a href="#" onclick="applyStyle(0)">Stylesheet 1</a>,
+              <a href="#" onclick="applyStyle(1)">Stylesheet 2</a>,
+              <a href="#" onclick="applyStyle(2)">Stylesheet 3</a>,
+              <a href="#" onclick="applyStyle(3)">Stylesheet 4</a>.
+            </p>
+             <h1>Instructions</h1>
+            <p>Please modify this page to include a description of each stylesheet, including anything clever that 
+            	 you did to achieve a given effect. Please also include the contributors to a given stylesheet.</p>
+         </div> <!-- text -->
+         <div id="sidebar">
+           <h3>Grading</h3>
+            <p>In order to get full credit for this assignment, you will need to demonstrate what you have learned 
+            		and how you helped your classmates. This means your contribution needs to be briefly described 
+                    on the page.</p>
+          </div> <!--sidebar -->
+        </div> <!-- content -->
+        <div id="bottom">Submit this assignment by </div>
+      </div> <!-- document -->
+      
+      <script>
+	    <!-- DISABLE STYLES: This function turns off the four stylesheets -->
+	    function disableStyles() 
+		{
+		  document.styleSheets[0].disabled = true;
+		  document.styleSheets[1].disabled = true;
+		  document.styleSheets[2].disabled = true;
+		  document.styleSheets[3].disabled = true;
+		}
+		<!-- APPLY STYLES: This function turns off all four stylesheets, then turns one back on -->
+		function applyStyle(i)
+		{
+			disableStyles();
+			document.styleSheets[i].disabled = false;
+		}
+	  </script>
+   </body>
+</html>

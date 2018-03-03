@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CS 213 Week 06 Ponder and Prove</title>
+    <script type="text/javascript" src="week06ponder.js"></script>
+    <style type="text/css">
+	  form, pre {
+		  margin-left:20px; 
+		  font-family:Verdana, Geneva, sans-serif; 
+          padding:6px;
+          width: 550px;
+          font-size: 12px;
+	      border: 1px solid rgb(0, 90, 136); 
+          border-radius: 4px;
+	  }
+	  h2 {
+		  border-bottom-style: solid;
+	  }
+	</style>
+  </head>
+  
+<body>
+    <!-- First problem: Age -->
+	<h2>#1: Age</h2>
+    <p>Please indicate your age: 0-118 years</p>
+    <form action="" id="form1">
+ 	  <div>
+            <input oninput="validateAge(this.value, 'ageError1');" size="3"/>
+            <span id="ageError1" style="color:red; visibility:visible">Invalid age</span>
+      </div>
+      <div>
+            <input oninput="validateAge(this.value, 'ageError2');" size="3"/>
+            <span id="ageError2" style="color:red">Invalid age</span>
+      </div>
+    </form>
+    
+    <!-- Second problem: SSN -->
+	<h2>#2: SSN</h2>
+    <p>Please enter a Social Security Number: 000-00-0000</p>
+    <form action="" id="form2">
+        <div>
+             <input oninput="validateSSN(this.value, 'ssnError1');" size="11"/>
+             <span id="ssnError1" style="color:red">Invalid SSN</span>
+        </div>
+        <div>
+             <input oninput="validateSSN(this.value, 'ssnError2');" size="11"/>
+             <span id="ssnError2" style="color:red">Invalid SSN</span>
+        </div>
+    </form>
+    
+    <!-- Third problem: Credit Card Number -->
+	<h2>#3: Credit Card Number</h2>
+    <p>Please enter a credit card number: 0000 0000 0000 0000</p>
+    <form action="" id="form3">
+      <div>
+      		<input oninput="validateCCNum(this.value, 'ccNumError1');" size="19" />
+            <span id="ccNumError1" style="color:red">Invalid credit card number</span>
+      </div>
+      <div>
+              <input oninput="validateCCNum(this.value, 'ccNumError2');" size="19" />
+              <span id="ccNumError2" style="color:red">Invalid credit card number</span>
+      </div>
+    </form>
+    
+    <!-- Fourth problem: Date -->
+	<h2>#4: Date</h2>
+    <p>Please enter a date: m/d/yyyy</p>
+    <form action="" id="form4">
+      <div>
+             <input oninput="validateDate(this.value, 'dateError1');" size="9" />
+             <span id="dateError1" style="color:red">Invalid date</span>
+      </div>
+      <div>
+             <input oninput="validateDate(this.value, 'dateError2');" size="9" />
+             <span id="dateError2" style="color:red">Invalid date</span>
+      </div>
+    </form>
+    
+    <!-- Fifth problem: Abbreviation -->
+	<h2>#5: State Abbreviation</h2>
+    <p>Please enter a 2-letter state abbreviation</p>
+    <form action="" id="form5">
+      <div>
+              <input oninput="validateState(this.value, 'stateError1');" size="2"  />
+              <span id="stateError1" style="color:red">Invalid state abbreviation</span>
+      </div>
+      <div>
+              <input oninput="validateState(this.value, 'stateError2');" size="2"  />
+              <span id="stateError2" style="color:red">Invalid state abbreviation</span>
+	  </div>
+    </form>
+
+    <!-- Sixth problem: Money  -->
+	<h2>#6: Dollar Amount</h2>
+    <p>Please enter an amount in US dollars</p>
+    <form action="" id="form6">
+      <div>
+              <input oninput="validateAmount(this.value, 'amountError1');" size="10" />
+              <span id="amountError1" style="color:red">Invalid money amount</span>
+      </div>
+      <div>
+              <input oninput="validateAmount(this.value, 'amountError2');" size="10" />
+              <span id="amountError2" style="color:red">Invalid money amount</span>
+	  </div>
+    </form>
+  </body>
+</html>
