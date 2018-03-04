@@ -1,1 +1,128 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE bsa SYSTEM "BSA.dtd">
+<bsa>
+  <council name="">
+    <troop troopNumber="42" unitName="Hitchhikers">
+      <scout>
+        <firstName></firstName>
+        <lastName></lastName>
+        <address>
+          <street></street>
+          <city></city>
+          <state></state>
+        </address>
+        <phone></phone>
+        <rank dateEarned=""></rank>
+        <rank dateEarned=""></rank>
+        <meritBadge dateEarned=""></meritBadge>
+        <meritBadge dateEarned=""></meritBadge>
+      </scout>
+      <scout>
+        <firstName></firstName>
+        <lastName></lastName>
+        <address>
+          <street></street>
+          <city></city>
+          <state></state>
+        </address>
+        <phone></phone>
+        <rank dateEarned=""></rank>
+        <rank dateEarned=""></rank>
+        <meritBadge dateEarned=""></meritBadge>
+        <meritBadge dateEarned=""></meritBadge>
+      </scout>
+    </troop>
+    <troop troopNumber="" unitName="">
+      <scout>
+        <firstName></firstName>
+        <lastName></lastName>
+        <address>
+          <street></street>
+          <city></city>
+          <state></state>
+        </address>
+        <phone></phone>
+        <rank dateEarned=""></rank>
+        <rank dateEarned=""></rank>
+        <meritBadge dateEarned=""></meritBadge>
+        <meritBadge dateEarned=""></meritBadge>
+      </scout>
+      <scout>
+        <firstName></firstName>
+        <lastName></lastName>
+        <address>
+          <street></street>
+          <city></city>
+          <state></state>
+        </address>
+        <phone></phone>
+        <rank dateEarned=""></rank>
+        <rank dateEarned=""></rank>
+        <meritBadge dateEarned=""></meritBadge>
+        <meritBadge dateEarned=""></meritBadge>
+      </scout>
+    </troop>
+  </council>
+  <council name="">
+    <troop troopNumber="" unitName="">
+      <scout>
+        <firstName></firstName>
+        <lastName></lastName>
+        <address>
+          <street></street>
+          <city></city>
+          <state></state>
+        </address>
+        <phone></phone>
+        <rank dateEarned=""></rank>
+        <rank dateEarned=""></rank>
+        <meritBadge dateEarned=""></meritBadge>
+        <meritBadge dateEarned=""></meritBadge>
+      </scout>
+      <scout>
+        <firstName></firstName>
+        <lastName></lastName>
+        <address>
+          <street></street>
+          <city></city>
+          <state></state>
+        </address>
+        <phone></phone>
+        <rank dateEarned=""></rank>
+        <rank dateEarned=""></rank>
+        <meritBadge dateEarned=""></meritBadge>
+        <meritBadge dateEarned=""></meritBadge>
+      </scout>
+    </troop>
+    <troop troopNumber="" unitName="">
+      <scout>
+        <firstName></firstName>
+        <lastName></lastName>
+        <address>
+          <street></street>
+          <city></city>
+          <state></state>
+        </address>
+        <phone></phone>
+        <rank dateEarned=""></rank>
+        <rank dateEarned=""></rank>
+        <meritBadge dateEarned=""></meritBadge>
+        <meritBadge dateEarned=""></meritBadge>
+      </scout>
+      <scout>
+        <firstName></firstName>
+        <lastName></lastName>
+        <address>
+          <street></street>
+          <city></city>
+          <state></state>
+        </address>
+        <phone></phone>
+        <rank dateEarned=""></rank>
+        <rank dateEarned=""></rank>
+        <meritBadge dateEarned=""></meritBadge>
+        <meritBadge dateEarned=""></meritBadge>
+      </scout>
+    </troop>
+  </council>
+</bsa>
