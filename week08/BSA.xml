@@ -1,127 +1,127 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE bsa SYSTEM "BSA.dtd">
 <bsa>
-  <council name="">
+  <council name="Senate">
     <troop troopNumber="42" unitName="Hitchhikers">
       <scout>
-        <firstName></firstName>
-        <lastName></lastName>
+        <firstName>Harold</firstName>
+        <lastName>Gumstopper</lastName>
         <address>
-          <street></street>
-          <city></city>
-          <state></state>
+          <street>123 Gumdrop Alley</street>
+          <city>North Northwest</city>
+          <state>IL</state>
         </address>
-        <phone></phone>
-        <rank dateEarned=""></rank>
-        <rank dateEarned=""></rank>
-        <meritBadge dateEarned=""></meritBadge>
-        <meritBadge dateEarned=""></meritBadge>
+        <phone>843-689-1212</phone>
+        <rank dateEarned="2014-06-19">Tenderfoot</rank>
+        <rank dateEarned="2014-07-11">2nd Class</rank>
+        <meritBadge dateEarned="2012-04-17">First Aid</meritBadge>
+        <meritBadge dateEarned="2013-03-22">Life Saving</meritBadge>
       </scout>
       <scout>
-        <firstName></firstName>
-        <lastName></lastName>
+        <firstName>Douglas</firstName>
+        <lastName>Haynes</lastName>
         <address>
-          <street></street>
-          <city></city>
-          <state></state>
+          <street>2223 Coal Street</street>
+          <city>North Northwest</city>
+          <state>IL</state>
         </address>
-        <phone></phone>
-        <rank dateEarned=""></rank>
-        <rank dateEarned=""></rank>
-        <meritBadge dateEarned=""></meritBadge>
-        <meritBadge dateEarned=""></meritBadge>
+        <phone>843-301-0772</phone>
+        <rank dateEarned="2013-09-03">Tenderfoot</rank>
+        <rank dateEarned="2013-11-20">2nd Class</rank>
+        <meritBadge dateEarned="2011-12-07">Environmental Science</meritBadge>
+        <meritBadge dateEarned="2011-12-30">Camping</meritBadge>
       </scout>
     </troop>
-    <troop troopNumber="" unitName="">
+    <troop troopNumber="7" unitName="Padawans">
       <scout>
-        <firstName></firstName>
-        <lastName></lastName>
+        <firstName>Kayla</firstName>
+        <lastName>Thompson</lastName>
         <address>
-          <street></street>
-          <city></city>
-          <state></state>
+          <street>2152 Eastland Avenue</street>
+          <city>Hattiesburg</city>
+          <state>MS</state>
         </address>
-        <phone></phone>
-        <rank dateEarned=""></rank>
-        <rank dateEarned=""></rank>
-        <meritBadge dateEarned=""></meritBadge>
-        <meritBadge dateEarned=""></meritBadge>
+        <phone>228-259-3571</phone>
+        <rank dateEarned="2011-06-02">Tenderfoot</rank>
+        <rank dateEarned="2014-07-14">2nd Class</rank>
+        <meritBadge dateEarned="2010-02-12">Citizenship in the World</meritBadge>
+        <meritBadge dateEarned="2012-08-31">Personal Fitness</meritBadge>
       </scout>
       <scout>
-        <firstName></firstName>
-        <lastName></lastName>
+        <firstName>Isabel</firstName>
+        <lastName>Bailey</lastName>
         <address>
-          <street></street>
-          <city></city>
-          <state></state>
+          <street>4319 Pleasant Hill Road</street>
+          <city>Hattiesburg</city>
+          <state>MS</state>
         </address>
-        <phone></phone>
-        <rank dateEarned=""></rank>
-        <rank dateEarned=""></rank>
-        <meritBadge dateEarned=""></meritBadge>
-        <meritBadge dateEarned=""></meritBadge>
+        <phone>601-814-8316</phone>
+        <rank dateEarned="2011-05-02">Tenderfoot</rank>
+        <rank dateEarned="2011-05-24">2nd Class</rank>
+        <meritBadge dateEarned="2010-07-07">Family Life</meritBadge>
+        <meritBadge dateEarned="2011-05-19">Communications</meritBadge>
       </scout>
     </troop>
   </council>
-  <council name="">
-    <troop troopNumber="" unitName="">
+  <council name="The Dark Side">
+    <troop troopNumber="13" unitName="The Struggle Is Real">
       <scout>
-        <firstName></firstName>
-        <lastName></lastName>
+        <firstName>Christy</firstName>
+        <lastName>Padilla</lastName>
         <address>
-          <street></street>
-          <city></city>
-          <state></state>
+          <street>1006 Aaron Smith Drive</street>
+          <city>Intercourse</city>
+          <state>PA</state>
         </address>
-        <phone></phone>
-        <rank dateEarned=""></rank>
-        <rank dateEarned=""></rank>
-        <meritBadge dateEarned=""></meritBadge>
-        <meritBadge dateEarned=""></meritBadge>
+        <phone>919-821-5738</phone>
+        <rank dateEarned="2012-03-27">Star</rank>
+        <rank dateEarned="2013-07-10">Life</rank>
+        <meritBadge dateEarned="2010-08-30">Bugling</meritBadge>
+        <meritBadge dateEarned="2011-05-25">Advanced Siege-Breaking Tactics</meritBadge>
       </scout>
       <scout>
-        <firstName></firstName>
-        <lastName></lastName>
+        <firstName>Jesse</firstName>
+        <lastName>Lowe</lastName>
         <address>
-          <street></street>
-          <city></city>
-          <state></state>
+          <street>2114 Alexander Avenue</street>
+          <city>Intercourse</city>
+          <state>PA</state>
         </address>
-        <phone></phone>
-        <rank dateEarned=""></rank>
-        <rank dateEarned=""></rank>
-        <meritBadge dateEarned=""></meritBadge>
-        <meritBadge dateEarned=""></meritBadge>
+        <phone>919-521-5084</phone>
+        <rank dateEarned="1888-09-12">Eagle</rank>
+        <rank dateEarned="1935-03-05">Dreadnaught</rank>
+        <meritBadge dateEarned="1652-09-04">Survivalist</meritBadge>
+        <meritBadge dateEarned="1804-01-10">Swimming</meritBadge>
       </scout>
     </troop>
-    <troop troopNumber="" unitName="">
+    <troop troopNumber="66" unitName="Night Badgers">
       <scout>
-        <firstName></firstName>
-        <lastName></lastName>
+        <firstName>Merri</firstName>
+        <lastName>Castle</lastName>
         <address>
-          <street></street>
-          <city></city>
-          <state></state>
+          <street>4434 Frank Avenue</street>
+          <city>Agawam</city>
+          <state>MA</state>
         </address>
-        <phone></phone>
-        <rank dateEarned=""></rank>
-        <rank dateEarned=""></rank>
-        <meritBadge dateEarned=""></meritBadge>
-        <meritBadge dateEarned=""></meritBadge>
+        <phone>413-244-4312</phone>
+        <rank dateEarned="1669-04-30">Weird</rank>
+        <rank dateEarned="1985-03-19">Dark</rank>
+        <meritBadge dateEarned="1636-06-20">Invisibility</meritBadge>
+        <meritBadge dateEarned="1719-04-06">Disabilities Awareness</meritBadge>
       </scout>
       <scout>
-        <firstName></firstName>
-        <lastName></lastName>
+        <firstName>Derick</firstName>
+        <lastName>Olsen</lastName>
         <address>
           <street></street>
-          <city></city>
-          <state></state>
+          <city>Agawam</city>
+          <state>MA</state>
         </address>
-        <phone></phone>
-        <rank dateEarned=""></rank>
-        <rank dateEarned=""></rank>
-        <meritBadge dateEarned=""></meritBadge>
-        <meritBadge dateEarned=""></meritBadge>
+        <phone>508-846-9116</phone>
+        <rank dateEarned="1583-06-23">Fear</rank>
+        <rank dateEarned="1718-08-22">Eternal</rank>
+        <meritBadge dateEarned="1907-12-16">Apparition</meritBadge>
+        <meritBadge dateEarned="1583-05-23">Climbing</meritBadge>
       </scout>
     </troop>
   </council>
