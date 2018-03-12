@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:template match="/">
     <html>
@@ -12,61 +11,90 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   </xsl:template>
 
   <xsl:template match="bsa/council">
-    <xsl:for-each select="@name">
-      <h2>
-        Council:
-        <xsl:value-of select="."/>
-      </h2>
-    </xsl:for-each>
+    <h2>
+      Council:
+      <xsl:value-of select="@name"/>
+    </h2>
     <xsl:apply-templates select="troop"/>
     <br/>
   </xsl:template>
 
   <xsl:template match="troop">
-    <xsl:param name="tNumber" select="@troopNumber"/>
-    <xsl:param name="uName" select="@unitName"/>
-    <xsl:for-each select="@troopNumber">
+    <div class="troop">
+      <h3>
+        Troop #
+        <xsl:value-of select="@troopNumber"/>
+        &#160;
+        <xsl:value-of select="@unitName"/>
+      </h3>
       <div>
-        <h3>
-          Troop #
-          <xsl:value-of select="$tNumber"/>
-          &#160;
-          <xsl:value-of select="$uName"/>
-        </h3>
         <h4>Scouts</h4>
-        <!--<xsl:apply-templates select="scout"/>-->
+        <xsl:apply-templates select="scout"/>
       </div>
-    </xsl:for-each>
+    </div>
   </xsl:template>
 
   <xsl:template match="scout">
-    <div>
-      <xsl:apply-templates mode="address" />
+    <div class="scout">
+      <span>
+        <xsl:value-of select="lastName/."/>,
+        <xsl:value-of select="firstName/."/>
+      </span>
+      <br/>
+      <span>
+        <xsl:value-of select="address/street/."/>
+        <br/>
+        <xsl:value-of select="address/city/."/>,
+        <xsl:value-of select="address/state/."/>
+      </span>
+      <br/>
+      <span>
+        <xsl:value-of select="phone/."/>
+      </span>
+      <br/>
+      <span class="rank">
+        <table class="rTable" border="1">
+          <tr>
+            <th>Rank</th>
+            <th>Date Earned</th>
+          </tr>
+          <xsl:apply-templates select="rank"/>
+        </table>
+      </span>
+      <br/>
+      <span class="meritBadge">
+        <table class="mbTable" border="1">
+          <tr>
+            <th>Merit Badge</th>
+            <th>Date Earned</th>
+          </tr>
+          <xsl:apply-templates select="meritBadge"/>
+        </table>
+      </span>
     </div>
+    <br/>
   </xsl:template>
 
-  <xsl:template match="address">
-    <div>
-      Address:
-    </div>
-  </xsl:template>
-  
-  <!--<xsl:template match="rank">
-    <table border="1">
-      <tr>
-        <th>Rank</th>
-        <th>Date Earned</th>
-      </tr>
-    </table>
+  <xsl:template match="rank">
+    <tr>
+      <td>
+        <xsl:value-of select="."/>
+      </td>
+      <td>
+        <xsl:value-of select="@dateEarned"/>
+      </td>
+    </tr>
   </xsl:template>
   
   <xsl:template match="meritBadge">
-    <table border="1">
-      <tr>
-        <th>Merit Badge</th>
-        <th>Date Earned</th>
-      </tr>
-    </table>
-  </xsl:template>-->
+    <tr>
+      <td>
+        <xsl:value-of select="."/>
+      </td>
+      <td>
+        <xsl:value-of select="@dateEarned"/>
+      </td>
+    </tr>
+  </xsl:template>
 
 </xsl:stylesheet>
