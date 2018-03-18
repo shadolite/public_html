@@ -9,10 +9,11 @@
     <div id="cities">
         <span>
             <select>
-                <option>Canada</option>
-                <option>Mexico</option>
-                <option>Russia</option>
-                <option>USA</option>
+                <option value="">Select</option>
+                <option value="canada"onselect="loadData(this.value)">Canada</option>
+                <option value="mexico" onselect="loadData(this.value)">Mexico</option>
+                <option value="russia" onselect="loadData(this.value)">Russia</option>
+                <option value="usa" onselect="loadData(this.value)">USA</option>
             </select>
         </span>
         <span>
