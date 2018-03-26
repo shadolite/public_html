@@ -11,7 +11,7 @@ echo
    </head>
    <body>";
 
-echo "<p>The English cardinal \"" . $_POST["input4"] . "\" is not between \"one\" and \"twenty\"</p>"
+echo "<p>The English cardinal \"" . $_POST["input4"] . "\" is not between \"one\" and \"twenty\"</p>";
 echo "<p>The word \"" . $_POST["input4"] . "\" in Spanish is \"". $countToTwenty[$_POST["input4"]] ."\".</p>";
 
 echo  
