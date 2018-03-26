@@ -3,6 +3,8 @@ $inputString = $_POST["input6"];
 $list = explode(", ", $inputString);
 sort($list);
 
+echo count($list);
+
 echo 
 "<html>
    <head>
@@ -11,12 +13,6 @@ echo
    <body>
       <table>";
 
-for ($item = 0; item < count($list); $item++){
-echo	
-		"<tr>
-			<td>$list[$item]</td>
-		</tr>";
-}
 
 echo
 	"</table>
