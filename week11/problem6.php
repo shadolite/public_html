@@ -1,9 +1,9 @@
 <?php
 $inputString = $_POST["input6"];
 $list = explode(", ", $inputString);
-sort($list);
+$listCount = count($list);
 
-echo count($list);
+sort($list);
 
 echo 
 "<html>
@@ -12,7 +12,13 @@ echo
    </head>
    <body>
       <table>";
-
+	  
+for ($item = 0; item < $listCount; $item++){
+echo	
+		"<tr>
+			<td>$list[$item]</td>
+		</tr>";
+}
 
 echo
 	"</table>
