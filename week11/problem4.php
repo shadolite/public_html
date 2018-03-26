@@ -9,8 +9,12 @@ echo
    <head>
       <title>Week 11 : Problem 4</title>
    </head>
-   <body>
-      <p>The word \"" . $_POST["input4"] . "\" in Spanish is \"". $countToTwenty[$_POST["input4"]] ."\".</p>
-   </body>
+   <body>";
+
+echo "<p>The English cardinal \"" . $_POST["input4"] . "\" is not between \"one\" and \"twenty\"</p>"
+echo "<p>The word \"" . $_POST["input4"] . "\" in Spanish is \"". $countToTwenty[$_POST["input4"]] ."\".</p>";
+
+echo  
+   "</body>
 </html>";
 ?>
