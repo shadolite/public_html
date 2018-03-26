@@ -10,7 +10,7 @@ echo
       <title>Week 11 : Problem 4</title>
    </head>
    <body>
-      <p>The word " . $_POST["input4"] . " in Spanish is ". countToTwenty[$_POST["input4"]] ."</p>
+      <p>The word " . $_POST["input4"] . " in Spanish is ". $countToTwenty[$_POST["input4"]] ."</p>
    </body>
 </html>";
 ?>
