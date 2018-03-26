@@ -21,7 +21,7 @@ for ($power = 0; $power < $n; $power++){
 		$outPut = $outPut * $x;
 	}
 	echo "<tr>
-			<td>$power</td>
+			<td>"$power + 1"</td>
 			<td>$outPut</td>
 		</tr>";
 }
