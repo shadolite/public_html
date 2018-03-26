@@ -16,12 +16,12 @@ echo
 	  <th>X<sup>n</sup></th>
 	  </tr>";
 
-for ($power = 0; $power < $n; $power++){
-	if ($power > 0){
+for ($power = 1; $power <= $n; $power++){
+	if ($power > 1){
 		$outPut = $outPut * $x;
 	}
 	echo "<tr>
-			<td>"$power + 1"</td>
+			<td>$power</td>
 			<td>$outPut</td>
 		</tr>";
 }
