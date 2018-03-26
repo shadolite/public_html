@@ -1,6 +1,6 @@
 <?php
 $inputString = $_POST["input6"];
-$list = array(explode(",", $inputString));
+$list = explode(",", $inputString);
 sort($list);
 
 echo 
