@@ -7,7 +7,7 @@ $outPut = $_POST["x"];
 echo 
 "<html>
    <head>
-      <title>Week 11 : Problem 2</title>
+      <title>Week 11 : Problem 5</title>
    </head>
    <body>
       <table>
