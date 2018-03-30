@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <link href='../week07style.css' rel='stylesheet'>
+  <script type="text/javascript" src="week07ponder.js"></script>
+  <style>
+  </style>
+</head>
+<body onload="disableButton('submitCustomerInfo')">
+  <header>
+    <h1>KWC Craftsmanship</h1>
+    <h3>Products and Designs with Innovations.</h3>
+    <nav>
+      <ul class="navigation">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active"><a href="gallery.html">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="mainContent">
+    <div>
+      <form onreset="clearCart()" action="">
+        <table id="products">
+          <thead>
+            <tr>
+              <th>Quantity</th>
+              <th>Product</th>
+              <th id="dscrHeader">Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="tools">
+              <td><input class="productQty" type="number" maxlength="1" oninput="validateQuantity(this.value, 'quantityError')" /></td>
+              <td><img class="productImg" alt="Custom Tools" src="../images/customtools.png" width="500" height="500" /></td>
+              <td class="productDscr">A custom tool, made for your specific purposes.</td>
+              <td class="productPrice">$100</td>
+            </tr>
+            <tr id="dies">
+              <td><input class="productQty" size="1" maxlength="1" oninput="validateQuantity(this.value, 'quantityError')" /></td>
+              <td><img class="productImg" alt="Roll Dies" src="../images/rolldies.png" width="500" height="500" /></td>
+              <td class="productDscr">A roll die with a custom pattern.</td>
+              <td class="productPrice">$500</td>
+            </tr>
+            <tr id="weapons">
+              <td><input class="productQty" size="1" maxlength="1" oninput="validateQuantity(this.value, 'quantityError')" /></td>
+              <td><img class="productImg" alt="Master Sword" src="../images/mastersword.png" width="500" height="500" /></td>
+              <td class="productDscr">A custom weapon made from wood or pvc.</td>
+              <td class="productPrice">$200</td>
+            </tr>
+            <tr id="engraving">
+              <td><input class="productQty" size="1" maxlength="1" oninput="validateQuantity(this.value, 'quantityError')" /></td>
+              <td><img class="productImg" alt="Stone Plaque" src="../images/stoneplaque.png" width="500" height="500" /></td>
+              <td class="productDscr">A custom engraving on metal, stone, or wood. Material not included.</td>
+              <td class="productPrice">$50</td>
+            </tr>
+            <tr id="signBoards">
+              <td><input class="productQty" size="1" maxlength="1" oninput="validateQuantity(this.value, 'quantityError')" /></td>
+              <td><img class="productImg" alt="Sign Board" src="../images/sign.png" width="500" height="500" /></td>
+              <td class="productDscr">A custom signboard for your business.</td>
+              <td class="productPrice">$300</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td id="priceDisclaimer">All costs include design time, materials, and labor, unless otherwise stated.</td>
+            </tr>
+            <tr>
+              <td id="quantityError" class="error">There is a limit of 5 on each item.</td>
+            </tr>
+          </tfoot>
+        </table>
+        <input type="button" id="updateCartButton" value="Update Cart" onclick="updateCart()" disabled="disabled" />
+        <input type="reset" />
+      </form>
+    </div>
+  </div>
+  <div class="sideContent">
+    <aside>
+      <table id="cart">
+        <thead>Cart</thead>
+        <tr id="tax">
+          <td class="item">Tax 7%</td>
+          <td class="amount">$0.00</td>
+        </tr>
+        <tr id="shipping">
+          <td class="item">Shipping</td>
+          <td class="amount">$0.00</td>
+        </tr>
+        <tr id="total">
+          <td class="item">Total</td>
+          <td class="amount">$0.00</td>
+        </tr>
+      </table>
+    </aside>
+    <aside id="checkOut">
+      <h2>Please provide the following info to submit your order:</h2>
+      <form onsubmit="processOrder()" action="" id="customerInfo">
+        <div id="contactInfo">
+          Name (first and last):
+          <input type="text" id="customerName" oninput="validateName(this.value, 'customerName')" onblur="checkForErrors()" />
+          Phone Number:
+          <input type="text" id="phone" placeholder="(000) 000-0000" oninput="validatePhone(this.value, 'phone')" onblur="checkForErrors()" /><br />
+          Email Address:
+          <input type="text" id="emailAddress" oninput="validateEmail(this.value, 'emailAddress')" onblur="checkForErrors()" /><br />
+        </div>
+        <div id="address">
+          Street Address:
+          <input type="text" id="street" oninput="validateStreet(this.value, 'street')" onblur="checkForErrors()" /><br />
+          City:
+          <input type="text" id="city" oninput="validateCity(this.value, 'city')" onblur="checkForErrors()" />
+          State:
+          <input type="text" id="state" maxlength="2" oninput="validateState(this.value, 'state')" onblur="checkForErrors()" />
+          Zip:
+          <input type="text" id="zip" maxlength="5" oninput="validateZip(this.value, 'zip')" onblur="checkForErrors()" /><br />
+        </div>
+        <div id="paymentInfo">
+          Credit/Debit Card:<br />
+          Card Number:
+          <input type="text" id="ccNum" placeholder="0000 0000 0000 0000" oninput="validateCCNum(this.value, 'ccNum')" onblur="checkForErrors()" />
+          Expiration Date:
+          <input type="text" id="expDate" placeholder="mm/yy" oninput="validateExp(this.value, 'expDate')" onblur="checkForErrors()" /><br />
+          <span class="error" id="">Please fill out all fields. Check any highlighted fields for errors.</span>
+        </div>
+        <div id="submit">
+          <input id="submitCustomerInfo" type="submit" />
+          <span>*All fields are required.</span><br />
+          <span class="error" id="formError">Please fill out all fields. Check any highlighted fields for errors.</span>
+        </div>
+      </form>
+    </aside>
+  </div>
+  <footer>Copyright &copy; Kenith Wayne Chambers</footer>
+</body>
+</html>
