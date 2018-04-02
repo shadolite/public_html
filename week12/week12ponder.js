@@ -35,6 +35,7 @@ function updateCart() {
     updateTax(subtotal);
     updateShipping(numProducts);
     updateTotal(subtotal);
+    updateProductSummary();
 }
 
 function getSubtotal(numProducts) {
@@ -60,6 +61,7 @@ function updateTax(subtotal)
     var newTax = document.createTextNode("$" + tax);
     var currentTax = getCurrentTax();
     currentTax.replaceChild(newTax, currentTax.childNodes[0]);
+    document.getElementById("taxAmt").value = tax;
 }
 
 function updateShipping(numProducts) {
@@ -74,6 +76,7 @@ function updateShipping(numProducts) {
     var newShipping = document.createTextNode("$" + shipping);
     var currentShipping = getCurrentShipping();
     currentShipping.replaceChild(newShipping, currentShipping.childNodes[0]);
+    document.getElementById("shipAmt").value = shipping;
 }
 
 function updateTotal(subtotal) {
@@ -84,6 +87,15 @@ function updateTotal(subtotal) {
     var newTotal = document.createTextNode(total);
     var currentTotal = document.getElementById('total').getElementsByClassName('amount')[0];
     currentTotal.replaceChild(newTotal, currentTotal.childNodes[0]);
+    document.getElementById("totalAmt").value = total;
+}
+
+function updateProductSummary() {
+    document.getElementById("toolQty").value = document.getElementsByClassName('productQty')[0].value;
+    document.getElementById("dieQty").value = document.getElementsByClassName('productQty')[1].value;
+    document.getElementById("weaponQty").value = document.getElementsByClassName('productQty')[2].value;
+    document.getElementById("engravingQty").value = document.getElementsByClassName('productQty')[3].value;
+    document.getElementById("signQty").value = document.getElementsByClassName('productQty')[4].value;
 }
 
 function getCurrentTax() {
@@ -210,7 +222,7 @@ function processOrder() {
 function checkForErrors() {
     var inputElements = document.getElementById('customerInfo').getElementsByTagName('input');
 
-    for (var element = 0; element < inputElements.length -1; element++) {
+    for (var element = 0; element < inputElements.length -9; element++) {
         var style = inputElements[element].style.border.toString();
         var value = inputElements[element].value;
         if (value == '') {

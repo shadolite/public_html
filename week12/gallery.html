@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery</title>
-  <link href='../week07style.css' rel='stylesheet'>
-  <script type="text/javascript" src="week07ponder.js"></script>
+  <link href='../week12style.css' rel='stylesheet'>
+  <script type="text/javascript" src="week12ponder.js"></script>
   <style>
   </style>
 </head>
@@ -35,7 +35,7 @@
           </thead>
           <tbody>
             <tr id="tools">
-              <td><input class="productQty" type="number" maxlength="1" oninput="validateQuantity(this.value, 'quantityError')" /></td>
+              <td><input class="productQty" size="1" maxlength="1" oninput="validateQuantity(this.value, 'quantityError')" /></td>
               <td><img class="productImg" alt="Custom Tools" src="../images/customtools.png" width="500" height="500" /></td>
               <td class="productDscr">A custom tool, made for your specific purposes.</td>
               <td class="productPrice">$100</td>
@@ -99,37 +99,47 @@
     </aside>
     <aside id="checkOut">
       <h2>Please provide the following info to submit your order:</h2>
-      <form onsubmit="processOrder()" action="" id="customerInfo">
+      <form action="processOrder.php" id="customerInfo">
         <div id="contactInfo">
           Name (first and last):
-          <input type="text" id="customerName" oninput="validateName(this.value, 'customerName')" onblur="checkForErrors()" />
+          <input type="text" id="customerName" name="customerName" oninput="validateName(this.value, 'customerName')" onblur="checkForErrors()" />
           Phone Number:
-          <input type="text" id="phone" placeholder="(000) 000-0000" oninput="validatePhone(this.value, 'phone')" onblur="checkForErrors()" /><br />
+          <input type="text" id="phone" name="phone" placeholder="(000) 000-0000" oninput="validatePhone(this.value, 'phone')" onblur="checkForErrors()" /><br />
           Email Address:
-          <input type="text" id="emailAddress" oninput="validateEmail(this.value, 'emailAddress')" onblur="checkForErrors()" /><br />
+          <input type="text" id="emailAddress" name="emailAddress" oninput="validateEmail(this.value, 'emailAddress')" onblur="checkForErrors()" /><br />
         </div>
         <div id="address">
           Street Address:
-          <input type="text" id="street" oninput="validateStreet(this.value, 'street')" onblur="checkForErrors()" /><br />
+          <input type="text" id="street" name="street" oninput="validateStreet(this.value, 'street')" onblur="checkForErrors()" /><br />
           City:
-          <input type="text" id="city" oninput="validateCity(this.value, 'city')" onblur="checkForErrors()" />
+          <input type="text" id="city" name="city" oninput="validateCity(this.value, 'city')" onblur="checkForErrors()" />
           State:
-          <input type="text" id="state" maxlength="2" oninput="validateState(this.value, 'state')" onblur="checkForErrors()" />
+          <input type="text" id="state" name="state" maxlength="2" oninput="validateState(this.value, 'state')" onblur="checkForErrors()" />
           Zip:
-          <input type="text" id="zip" maxlength="5" oninput="validateZip(this.value, 'zip')" onblur="checkForErrors()" /><br />
+          <input type="text" id="zip" name="zip" maxlength="5" oninput="validateZip(this.value, 'zip')" onblur="checkForErrors()" /><br />
         </div>
         <div id="paymentInfo">
           Credit/Debit Card:<br />
           Card Number:
-          <input type="text" id="ccNum" placeholder="0000 0000 0000 0000" oninput="validateCCNum(this.value, 'ccNum')" onblur="checkForErrors()" />
+          <input type="text" id="ccNum" name="ccNum" placeholder="0000 0000 0000 0000" oninput="validateCCNum(this.value, 'ccNum')" onblur="checkForErrors()" />
           Expiration Date:
-          <input type="text" id="expDate" placeholder="mm/yy" oninput="validateExp(this.value, 'expDate')" onblur="checkForErrors()" /><br />
+          <input type="text" id="expDate" name="expDate" placeholder="mm/yy" oninput="validateExp(this.value, 'expDate')" onblur="checkForErrors()" /><br />
           <span class="error" id="">Please fill out all fields. Check any highlighted fields for errors.</span>
         </div>
         <div id="submit">
           <input id="submitCustomerInfo" type="submit" />
           <span>*All fields are required.</span><br />
           <span class="error" id="formError">Please fill out all fields. Check any highlighted fields for errors.</span>
+        </div>
+        <div id="productSummary">
+          <input id="toolQty" name="toolQty" />
+          <input id="dieQty" name="dieQty" />
+          <input id="weaponQty" name="weaponQty" />
+          <input id="engravingQty" name="engravingQty" />
+          <input id="signQty" name="signQty" />
+          <input id="shipAmt" name="shipAmt" />
+          <input id="taxAmt" name="taxAmt" />
+          <input id="totalAmt" name="totalAmt" />
         </div>
       </form>
     </aside>
