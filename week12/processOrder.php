@@ -29,7 +29,7 @@ $state = $_POST["state"];
 $zip = $_POST["zip"];
 
 $ccNum = $_POST["ccNum"];
-$exp = $_POST["expDate"];
+$exp = date("F Y", $_POST["expDate"]);
 
 echo 
 "<!DOCTYPE html>
@@ -65,10 +65,8 @@ echo
             <th>Price</th>
           </tr>
         </thead>
-        <tbody>";
-
-echo
-          "<tr id=\"tools\">
+        <tbody>
+		  <tr id=\"tools\">
             <td>Tools</td>
             <td>$toolsQty</td>
             <td>$$toolsTtl</td>
@@ -121,18 +119,16 @@ echo
 		<br />
 		<span>$email</span>
       </div>
-	  <br />
       <div id=\"address\">
-        <h5>Billing/Shipping Address</h5>
+        <h4>Billing/Shipping Address</h4>
 		<span>$street</span>
 		<br />
 		<span>$city, $state $zip</span>
       </div>
-	  <br />
       <div id=\"paymentInfo\">
-        <h6>Payment Information</h6>
+        <h4>Payment Information</h4>
         <span>Card Number: $ccNum</span>
-        <span>Exp:</span>
+        <span>Exp: $exp</span>
       </div>
 	  <br />
       <input type=\"button\" value=\"Cancel\" />
