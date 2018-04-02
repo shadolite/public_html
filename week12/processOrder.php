@@ -93,39 +93,47 @@ echo
             <td>$signQty</td>
             <td>$$signTtl</td>
           </tr>
-		</tbody><br />
-        <tfoot>
+		</tbody>
+      </table>
+	  <br />
+	  <table>
+        <thead>
           <tr id=\"tax\">
-            <td>Tax 7%</td>
-            <td>$tax</td>
+            <th>Tax 7%</th>
+            <th>$tax</th>
           </tr>
           <tr id=\"shipping\">
-            <td>Shipping</td>
-            <td>$shipping</td>
+            <th>Shipping</th>
+            <th>$shipping</th>
           </tr>
           <tr id=\"total\">
-            <td>Total</td>
-            <td>$total</td>
+            <th>Total</th>
+            <th>$total</th>
           </tr>
-        </tfoot>
+        </thead>
       </table>
 	  <br />
       <div id=\"contactInfo\">
         <span>Contact Information:</span>
 		<br />
 		<span>$name</span>
+		<br />
 		<span>$phone</span>
+		<br />
 		<span>$email</span>
       </div>
 	  <br />
       <div id=\"address\">
         <span>Billing/Shipping Address</span>
+		<br />
 		<span>$street</span>
+		<br />
 		<span>$city, $state $zip</span>
       </div>
 	  <br />
       <div id=\"paymentInfo\">
         <span>Payment Information</span>
+		<br />
         <span>Card Number: $ccNum</span>
         <span>Exp:</span>
       </div>
