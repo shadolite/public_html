@@ -74,43 +74,27 @@ echo
             <td>Tools</td>
             <td><input class=\"hidden\" value=\"$toolsQty\" />$toolsQty</td>
             <td class=\"productPrice\">$$toolsTtl</td>
-          </tr>";
-
-/*if ($dieQty > 0){
-echo
-          "<tr id=\"dies\">
+          </tr>
+          <tr id=\"dies\">
             <td>Tools</td>
             <td><input class=\"hidden\" value=\"$dieQty\" />$dieQty</td>
             <td class=\"productPrice\">$$dieTtl</td>
-          </tr>"
-};
-
-if ($weaponQty > 0){
-echo
-          "<tr id=\"weapons\">
+          </tr>
+          <tr id=\"weapons\">
             <td>Tools</td>
             <td><input class=\"hidden\" value=\"$weaponQty\" />$weaponQty</td>
             <td class=\"productPrice\">$$weaponTtl</td>
-          </tr>"
-};
-
-if ($engravingQty > 0){
-echo
-          "<tr id=\"engravings\">
+          </tr>
+          <tr id=\"engravings\">
             <td>Tools</td>
             <td><input class=\"hidden\" value=\"$engravingQty\" />$engravingQty</td>
             <td class=\"productPrice\">$$engravingTtl</td>
-          </tr>"
-};
-
-if ($signQty > 0){
-echo
-          "<tr id=\"signs\">
+          </tr>
+          <tr id=\"signs\">
             <td>Tools</td>
             <td><input class=\"hidden\" value=\"$signQty\" />$signQty</td>
             <td class=\"productPrice\">$$signTtl</td>
-          </tr>"
-};
+          </tr>";
 
 echo
         "</tbody>
