@@ -72,13 +72,13 @@ echo
 echo
           "<tr id=\"tools\">
             <td>Tools</td>
-            <td><input class=\"hidden\" value=\"$toolsQty\" />$toolsQty</td>
-            <td class=\"productPrice\">$$toolsTtl</td>
+            <td>$toolsQty</td>
+            <td>$$toolsTtl</td>
           </tr>
           <tr id=\"dies\">
             <td>Tools</td>
-            <td><input class=\"hidden\" value=\"$dieQty\" />$dieQty</td>
-            <td class=\"productPrice\">$$dieTtl</td>
+            <td>$dieQty</td>
+            <td>$$dieTtl</td>
           </tr>
           <tr id=\"weapons\">
             <td>Tools</td>
