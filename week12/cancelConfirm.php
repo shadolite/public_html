@@ -22,7 +22,7 @@ echo
   </header>
   <div class=\"mainContent\">";
 
-if ($POST['submitButton'] == "Cancel"){
+if ($_POST['submitButton'] == "Cancel"){
 echo
 "<span>Your order has been canceled.</span>";
 }
