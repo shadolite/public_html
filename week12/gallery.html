@@ -126,11 +126,6 @@
           <input type="text" id="expDate" name="expDate" placeholder="mm/yy" oninput="validateExp(this.value, 'expDate')" onblur="checkForErrors()" /><br />
           <span class="error" id="">Please fill out all fields. Check any highlighted fields for errors.</span>
         </div>
-        <div id="submit">
-          <input id="submitCustomerInfo" type="submit" />
-          <span>*All fields are required.</span><br />
-          <span class="error" id="formError">Please fill out all fields. Check any highlighted fields for errors.</span>
-        </div>
         <div id="productSummary">
           <input id="toolQty" name="toolQty" />
           <input id="dieQty" name="dieQty" />
@@ -140,6 +135,11 @@
           <input id="shipAmt" name="shipAmt" />
           <input id="taxAmt" name="taxAmt" />
           <input id="totalAmt" name="totalAmt" />
+        </div>
+        <div id="submit">
+          <input id="submitCustomerInfo" type="submit" />
+          <span>*All fields are required.</span><br />
+          <span class="error" id="formError">Please fill out all fields. Check any highlighted fields for errors.</span>
         </div>
       </form>
     </aside>
