@@ -69,14 +69,12 @@ echo
         </thead>
         <tbody>";
 
-if ($toolsQty > 0){
 echo
           "<tr id=\"tools\">
             <td>Tools</td>
             <td><input class=\"hidden\" value=\"$toolsQty\" />$toolsQty</td>
             <td class=\"productPrice\">$$toolsTtl</td>
-          </tr>"
-};
+          </tr>";
 
 /*if ($dieQty > 0){
 echo
