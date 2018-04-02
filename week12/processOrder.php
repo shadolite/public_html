@@ -115,7 +115,6 @@ echo
 	  <br />
       <div id=\"contactInfo\">
         <h4>Contact Information:</h4>
-		<br />
 		<span>$name</span>
 		<br />
 		<span>$phone</span>
@@ -124,16 +123,14 @@ echo
       </div>
 	  <br />
       <div id=\"address\">
-        <span>Billing/Shipping Address</span>
-		<br />
+        <h5>Billing/Shipping Address</h5>
 		<span>$street</span>
 		<br />
 		<span>$city, $state $zip</span>
       </div>
 	  <br />
       <div id=\"paymentInfo\">
-        <span>Payment Information</span>
-		<br />
+        <h6>Payment Information</h6>
         <span>Card Number: $ccNum</span>
         <span>Exp:</span>
       </div>
