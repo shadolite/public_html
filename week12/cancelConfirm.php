@@ -22,7 +22,7 @@ echo
   </header>
   <div class=\"mainContent\">";
 
-if ($GET['submitButton'] == "Cancel"){
+if ($POST['submitButton'] == "Cancel"){
 echo
 "<span>Your order has been canceled.</span>";
 }
