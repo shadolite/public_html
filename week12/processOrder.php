@@ -132,8 +132,8 @@ echo
         <span>Exp: $exp</span>
       </div>
 	  <br />
-      <input type=\"submit\" name=\"submit\" value=\"Cancel\" />
-      <input type=\"submit\" name=\"submit\" value=\"Confirm\" />
+      <input type=\"submit\" name=\"submitButton\" value=\"Cancel\" />
+      <input type=\"submit\" name=\"submitButton\" value=\"Confirm\" />
     </form>
   </div>
   <footer>Copyright &copy; Kenith Wayne Chambers</footer>
