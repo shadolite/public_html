@@ -21,6 +21,15 @@ echo
     </nav>
   </header>
   <div class=\"mainContent\">";
+
+if ($GET['submit'] == "Cancel"){
+echo
+"<span>Your order has been canceled.</span>";
+}
+else {
+echo
+"<span>Thank you for your order. You will recieve a receipt via email.</span>";	
+}
    
  echo  
   "</div>

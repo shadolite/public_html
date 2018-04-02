@@ -128,6 +128,7 @@ echo
       <div id=\"paymentInfo\">
         <h4>Payment Information</h4>
         <span>Card Number: $ccNum</span>
+		<br />
         <span>Exp: $exp</span>
       </div>
 	  <br />
