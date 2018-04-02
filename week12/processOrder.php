@@ -58,10 +58,8 @@ echo
         <thead>
           <tr>
             <th>Order Summary</th>
-          </tr>";
-
-echo
-          "<tr>
+          </tr>
+		  <tr>
             <th>Product</th>
             <th>Quantity</th>
             <th>Price</th>
@@ -82,18 +80,18 @@ echo
           </tr>
           <tr id=\"weapons\">
             <td>Tools</td>
-            <td><input class=\"hidden\" value=\"$weaponQty\" />$weaponQty</td>
-            <td class=\"productPrice\">$$weaponTtl</td>
+            <td>$weaponQty</td>
+            <td$$weaponTtl</td>
           </tr>
           <tr id=\"engravings\">
             <td>Tools</td>
-            <td><input class=\"hidden\" value=\"$engravingQty\" />$engravingQty</td>
-            <td class=\"productPrice\">$$engravingTtl</td>
+            <td>$engravingQty</td>
+            <td>$$engravingTtl</td>
           </tr>
           <tr id=\"signs\">
             <td>Tools</td>
-            <td><input class=\"hidden\" value=\"$signQty\" />$signQty</td>
-            <td class=\"productPrice\">$$signTtl</td>
+            <td>$signQty</td>
+            <td>$$signTtl</td>
           </tr>";
 
 echo
@@ -139,5 +137,5 @@ echo
   </div>
   <footer>Copyright &copy; Kenith Wayne Chambers</footer>
 </body>
-</html>";*/
+</html>";
 ?>
