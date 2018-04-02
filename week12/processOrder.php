@@ -114,7 +114,7 @@ echo
       </table>
 	  <br />
       <div id=\"contactInfo\">
-        <span>Contact Information:</span>
+        <h4>Contact Information:</h4>
 		<br />
 		<span>$name</span>
 		<br />
