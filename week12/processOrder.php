@@ -29,7 +29,7 @@ $state = $_POST["state"];
 $zip = $_POST["zip"];
 
 $ccNum = $_POST["ccNum"];
-$exp = date_create_from_format("m/y", $_POST["expDate"]);
+$exp = date_format(date_create_from_format("m/y", $_POST["expDate"]), 'F Y');
 
 echo 
 "<!DOCTYPE html>
