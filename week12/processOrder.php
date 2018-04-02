@@ -92,45 +92,44 @@ echo
             <td>Signs</td>
             <td>$signQty</td>
             <td>$$signTtl</td>
-          </tr>";
-
-echo
-        "</tbody>
+          </tr>
+		</tbody><br />
         <tfoot>
           <tr id=\"tax\">
-            <td class=\"item\">Tax 7%</td>
-            <td class=\"amount\"><input class=\"hidden\" name=\"tax\" /></td>
+            <td>Tax 7%</td>
+            <td>$tax</td>
           </tr>
           <tr id=\"shipping\">
-            <td class=\"item\">Shipping</td>
-            <td class=\"amount\"><input class=\"hidden\" name=\"shipping\" /></td>
+            <td>Shipping</td>
+            <td>$shipping</td>
           </tr>
           <tr id=\"total\">
-            <td class=\"item\">Total</td>
-            <td class=\"amount\"><input class=\"hidden\" name=\"total\" /></td>
+            <td>Total</td>
+            <td>$total</td>
           </tr>
         </tfoot>
       </table>
+	  <br />
       <div id=\"contactInfo\">
-        Contact Information:
-        <input class=\"hidden\" type=\"text\" id=\"customerName\" name=\"customerName\" />
-        <input class=\"hidden\" type=\"text\" id=\"phone\" name=\"phone\" /><br />
-        <input class=\"hidden\" type=\"text\" id=\"emailAddress\" name=\"emailAddress\" /><br />
+        <span>Contact Information:</span>
+		<br />
+		<span>$name</span>
+		<span>$phone</span>
+		<span>$email</span>
       </div>
+	  <br />
       <div id=\"address\">
-        Billing/Shipping Address
-        <input class=\"hidden\" type=\"text\" id=\"street\" name=\"street\" /><br />
-        <input class=\"hidden\" type=\"text\" id=\"city\" name=\"city\" />
-        <input class=\"hidden\" type=\"text\" id=\"state\" name=\"state\" />
-        <input class=\"hidden\" type=\"text\" id=\"zip\" name=\"zip\" /><br />
+        <span>Billing/Shipping Address</span>
+		<span>$street</span>
+		<span>$city, $state $zip</span>
       </div>
+	  <br />
       <div id=\"paymentInfo\">
-        Payment Information<br />
-        Card Number:
-        Exp:
-        <input class=\"hidden\" type=\"text\" id=\"ccNum\" name=\"ccNum\" />
-        <input class=\"hidden\" type=\"text\" id=\"expDate\" name=\"expDate\" />
+        <span>Payment Information</span>
+        <span>Card Number: $ccNum</span>
+        <span>Exp:</span>
       </div>
+	  <br />
       <input type=\"button\" value=\"Cancel\" />
       <input type=\"button\" value=\"Confirm\" />
     </form>
