@@ -53,7 +53,7 @@ echo
     </nav>
   </header>
   <div class=\"mainContent\">
-    <form action=\"\">
+    <form action=\"cancelConfirm.php\" method=\"post\" >
       <table id=\"orderSummary\">
         <thead>
           <tr>
@@ -131,8 +131,8 @@ echo
         <span>Exp: $exp</span>
       </div>
 	  <br />
-      <input type=\"button\" value=\"Cancel\" />
-      <input type=\"button\" value=\"Confirm\" />
+      <input type=\"submit\" name=\"submit\" value=\"Cancel\" />
+      <input type=\"submit\" name=\"submit\" value=\"Confirm\" />
     </form>
   </div>
   <footer>Copyright &copy; Kenith Wayne Chambers</footer>
