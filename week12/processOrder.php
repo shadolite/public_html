@@ -81,7 +81,7 @@ echo
           <tr id=\"weapons\">
             <td>Weapons</td>
             <td>$weaponQty</td>
-            <td$$weaponTtl</td>
+            <td>$$weaponTtl</td>
           </tr>
           <tr id=\"engravings\">
             <td>Engravings</td>
