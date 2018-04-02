@@ -99,7 +99,7 @@
     </aside>
     <aside id="checkOut">
       <h2>Please provide the following info to submit your order:</h2>
-      <form action="processOrder.php" id="customerInfo">
+      <form action="processOrder.php" id="customerInfo" method="post">
         <div id="contactInfo">
           Name (first and last):
           <input type="text" id="customerName" name="customerName" oninput="validateName(this.value, 'customerName')" onblur="checkForErrors()" />
