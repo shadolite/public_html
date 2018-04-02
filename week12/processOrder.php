@@ -74,22 +74,22 @@ echo
             <td>$$toolsTtl</td>
           </tr>
           <tr id=\"dies\">
-            <td>Tools</td>
+            <td>Dies</td>
             <td>$dieQty</td>
             <td>$$dieTtl</td>
           </tr>
           <tr id=\"weapons\">
-            <td>Tools</td>
+            <td>Weapons</td>
             <td>$weaponQty</td>
             <td$$weaponTtl</td>
           </tr>
           <tr id=\"engravings\">
-            <td>Tools</td>
+            <td>Engravings</td>
             <td>$engravingQty</td>
             <td>$$engravingTtl</td>
           </tr>
           <tr id=\"signs\">
-            <td>Tools</td>
+            <td>Signs</td>
             <td>$signQty</td>
             <td>$$signTtl</td>
           </tr>";
