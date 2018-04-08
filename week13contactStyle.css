@@ -3,7 +3,7 @@ html {
   min-height: 100%;
 }
 
-nav {
+nav, .card-body {
   background-color: dimgray;
 }
 
@@ -16,15 +16,7 @@ body {
     padding: 60px 15px 0;
   }
 
-.jumbotron {
-  background-color: lightslategray;
-}
-
-.card-body {
-  background-color: dimgray;
-}
-
-.card-footer {
+.jumbotron, .card-footer {
   background-color: lightslategray;
 }
 
